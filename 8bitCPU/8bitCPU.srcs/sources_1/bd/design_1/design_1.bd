@@ -1,0 +1,225 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x8FE3EB425437431F",
+      "device": "xc7z020clg400-1",
+      "gen_directory": "../../../../8bitCPU.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2022.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "top_0": ""
+    },
+    "ports": {
+      "sysclk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_1_sysclk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "125000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "btn0": {
+        "direction": "I"
+      },
+      "ar5": {
+        "direction": "O"
+      },
+      "ar4": {
+        "direction": "O"
+      },
+      "ar3": {
+        "direction": "O"
+      },
+      "ar2": {
+        "direction": "O"
+      },
+      "ar6": {
+        "direction": "O"
+      },
+      "ar7": {
+        "direction": "O"
+      },
+      "ar8": {
+        "direction": "O"
+      },
+      "ar9": {
+        "direction": "O"
+      },
+      "ar10": {
+        "direction": "O"
+      },
+      "ar11": {
+        "direction": "O"
+      },
+      "ar12": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "top_0": {
+        "vlnv": "xilinx.com:module_ref:top:1.0",
+        "xci_name": "design_1_top_0_1",
+        "xci_path": "ip\\design_1_top_0_1\\design_1_top_0_1.xci",
+        "inst_hier_path": "top_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "top",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CLK": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "125000000",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_1_sysclk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "PIN_13": {
+            "direction": "I"
+          },
+          "PIN_9": {
+            "direction": "O"
+          },
+          "PIN_10": {
+            "direction": "O"
+          },
+          "PIN_11": {
+            "direction": "O"
+          },
+          "PIN_12": {
+            "direction": "O"
+          },
+          "PIN_14": {
+            "direction": "O"
+          },
+          "PIN_15": {
+            "direction": "O"
+          },
+          "PIN_16": {
+            "direction": "O"
+          },
+          "PIN_17": {
+            "direction": "O"
+          },
+          "PIN_18": {
+            "direction": "O"
+          },
+          "PIN_19": {
+            "direction": "O"
+          },
+          "PIN_20": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "btn0_1": {
+        "ports": [
+          "btn0",
+          "top_0/PIN_13"
+        ]
+      },
+      "sysclk_1": {
+        "ports": [
+          "sysclk",
+          "top_0/CLK"
+        ]
+      },
+      "top_0_PIN_9": {
+        "ports": [
+          "top_0/PIN_9",
+          "ar6"
+        ]
+      },
+      "top_0_PIN_10": {
+        "ports": [
+          "top_0/PIN_10",
+          "ar7"
+        ]
+      },
+      "top_0_PIN_11": {
+        "ports": [
+          "top_0/PIN_11",
+          "ar8"
+        ]
+      },
+      "top_0_PIN_12": {
+        "ports": [
+          "top_0/PIN_12",
+          "ar5"
+        ]
+      },
+      "top_0_PIN_14": {
+        "ports": [
+          "top_0/PIN_14",
+          "ar9"
+        ]
+      },
+      "top_0_PIN_15": {
+        "ports": [
+          "top_0/PIN_15",
+          "ar10"
+        ]
+      },
+      "top_0_PIN_16": {
+        "ports": [
+          "top_0/PIN_16",
+          "ar4"
+        ]
+      },
+      "top_0_PIN_17": {
+        "ports": [
+          "top_0/PIN_17",
+          "ar3"
+        ]
+      },
+      "top_0_PIN_18": {
+        "ports": [
+          "top_0/PIN_18",
+          "ar11"
+        ]
+      },
+      "top_0_PIN_19": {
+        "ports": [
+          "top_0/PIN_19",
+          "ar12"
+        ]
+      },
+      "top_0_PIN_20": {
+        "ports": [
+          "top_0/PIN_20",
+          "ar2"
+        ]
+      }
+    }
+  }
+}
