@@ -3,7 +3,7 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 10/25/2022 10:34:29 PM
+// Create Date: 10/26/2022 07:04:56 PM
 // Design Name: 
 // Module Name: bin_bcd
 // Project Name: 
@@ -37,7 +37,7 @@ module bin_bcd(
                 bcd[7:4] = bcd[7:4] + 3;
             if (bcd[11:8] > 4)
                 bcd[11:8] = bcd[11:8] + 3;
-            // Concatenate acts as a shift
+            //Concatenate acts as a shift
             bcd = {bcd[10:0], bin[7-i]};
         end
     end

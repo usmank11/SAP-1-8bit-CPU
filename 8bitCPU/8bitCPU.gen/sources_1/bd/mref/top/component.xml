@@ -4,24 +4,6 @@
   <spirit:library>module_ref</spirit:library>
   <spirit:name>top</spirit:name>
   <spirit:version>1.0</spirit:version>
-  <spirit:busInterfaces>
-    <spirit:busInterface>
-      <spirit:name>CLK</spirit:name>
-      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
-      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
-      <spirit:slave/>
-      <spirit:portMaps>
-        <spirit:portMap>
-          <spirit:logicalPort>
-            <spirit:name>CLK</spirit:name>
-          </spirit:logicalPort>
-          <spirit:physicalPort>
-            <spirit:name>CLK</spirit:name>
-          </spirit:physicalPort>
-        </spirit:portMap>
-      </spirit:portMaps>
-    </spirit:busInterface>
-  </spirit:busInterfaces>
   <spirit:model>
     <spirit:views>
       <spirit:view>
@@ -33,7 +15,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>339aea8f</spirit:value>
+            <spirit:value>d708c45d</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -46,7 +28,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>339aea8f</spirit:value>
+            <spirit:value>d708c45d</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -61,7 +43,7 @@
     </spirit:views>
     <spirit:ports>
       <spirit:port>
-        <spirit:name>CLK</spirit:name>
+        <spirit:name>CLK_IN</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:wireTypeDefs>
@@ -74,7 +56,7 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>PIN_13</spirit:name>
+        <spirit:name>btn0</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:wireTypeDefs>
@@ -87,7 +69,7 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>PIN_9</spirit:name>
+        <spirit:name>ar6</spirit:name>
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:wireTypeDefs>
@@ -100,7 +82,7 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>PIN_10</spirit:name>
+        <spirit:name>ar7</spirit:name>
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:wireTypeDefs>
@@ -113,7 +95,7 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>PIN_11</spirit:name>
+        <spirit:name>ar8</spirit:name>
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:wireTypeDefs>
@@ -126,7 +108,7 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>PIN_12</spirit:name>
+        <spirit:name>ar5</spirit:name>
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:wireTypeDefs>
@@ -139,7 +121,7 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>PIN_14</spirit:name>
+        <spirit:name>ar9</spirit:name>
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:wireTypeDefs>
@@ -152,7 +134,7 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>PIN_15</spirit:name>
+        <spirit:name>ar10</spirit:name>
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:wireTypeDefs>
@@ -165,7 +147,7 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>PIN_16</spirit:name>
+        <spirit:name>ar4</spirit:name>
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:wireTypeDefs>
@@ -178,7 +160,7 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>PIN_17</spirit:name>
+        <spirit:name>ar3</spirit:name>
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:wireTypeDefs>
@@ -191,7 +173,7 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>PIN_18</spirit:name>
+        <spirit:name>ar11</spirit:name>
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:wireTypeDefs>
@@ -204,7 +186,7 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>PIN_19</spirit:name>
+        <spirit:name>ar12</spirit:name>
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:wireTypeDefs>
@@ -217,7 +199,7 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>PIN_20</spirit:name>
+        <spirit:name>ar2</spirit:name>
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:wireTypeDefs>
@@ -264,7 +246,7 @@
         <xilinx:designToolContext>IPI</xilinx:designToolContext>
       </xilinx:designToolContexts>
       <xilinx:coreRevision>1</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2022-10-26T03:41:30Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2022-10-27T01:53:20Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2022.2</xilinx:xilinxVersion>

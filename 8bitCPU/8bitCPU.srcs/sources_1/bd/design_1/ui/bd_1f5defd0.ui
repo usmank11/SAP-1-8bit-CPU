@@ -1,39 +1,39 @@
 {
    "ActiveEmotionalView":"Default View",
    "Default View_ScaleFactor":"1.0",
-   "Default View_TopLeft":"-653,-272",
+   "Default View_TopLeft":"-838,-338",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
 #  -string -flagsOSRD
-preplace port port-id_sysclk -pg 1 -lvl 0 -x -100 -y 150 -defaultsOSRD
-preplace port port-id_btn0 -pg 1 -lvl 0 -x -100 -y 170 -defaultsOSRD
-preplace port port-id_ar5 -pg 1 -lvl 3 -x 670 -y 120 -defaultsOSRD
-preplace port port-id_ar4 -pg 1 -lvl 3 -x 670 -y 180 -defaultsOSRD
-preplace port port-id_ar3 -pg 1 -lvl 3 -x 670 -y 200 -defaultsOSRD
-preplace port port-id_ar2 -pg 1 -lvl 3 -x 670 -y 260 -defaultsOSRD
-preplace port port-id_ar6 -pg 1 -lvl 3 -x 670 -y 60 -defaultsOSRD
-preplace port port-id_ar7 -pg 1 -lvl 3 -x 670 -y 80 -defaultsOSRD
-preplace port port-id_ar8 -pg 1 -lvl 3 -x 670 -y 100 -defaultsOSRD
-preplace port port-id_ar9 -pg 1 -lvl 3 -x 670 -y 140 -defaultsOSRD
-preplace port port-id_ar10 -pg 1 -lvl 3 -x 670 -y 160 -defaultsOSRD
-preplace port port-id_ar11 -pg 1 -lvl 3 -x 670 -y 220 -defaultsOSRD
-preplace port port-id_ar12 -pg 1 -lvl 3 -x 670 -y 240 -defaultsOSRD
-preplace inst top_0 -pg 1 -lvl 1 -x 120 -y 160 -defaultsOSRD
-preplace netloc sysclk_1 1 0 1 NJ 150
-preplace netloc btn0_1 1 0 1 NJ 170
-preplace netloc top_0_PIN_12 1 1 2 N 120 N
-preplace netloc top_0_PIN_16 1 1 2 N 180 N
-preplace netloc top_0_PIN_17 1 1 2 N 200 N
-preplace netloc top_0_PIN_20 1 1 2 N 260 N
-preplace netloc top_0_PIN_9 1 1 2 N 60 N
-preplace netloc top_0_PIN_10 1 1 2 N 80 N
-preplace netloc top_0_PIN_11 1 1 2 N 100 N
-preplace netloc top_0_PIN_14 1 1 2 N 140 N
-preplace netloc top_0_PIN_15 1 1 2 N 160 N
-preplace netloc top_0_PIN_18 1 1 2 N 220 N
-preplace netloc top_0_PIN_19 1 1 2 N 240 N
-levelinfo -pg 1 -100 120 440 670
-pagesize -pg 1 -db -bbox -sgen -190 -20 750 500
+preplace port port-id_btn0 -pg 1 -lvl 0 -x -10 -y 100 -defaultsOSRD
+preplace port port-id_ar2 -pg 1 -lvl 2 -x 220 -y 180 -defaultsOSRD
+preplace port port-id_ar12 -pg 1 -lvl 2 -x 220 -y 160 -defaultsOSRD
+preplace port port-id_ar11 -pg 1 -lvl 2 -x 220 -y 140 -defaultsOSRD
+preplace port port-id_ar3 -pg 1 -lvl 2 -x 220 -y 120 -defaultsOSRD
+preplace port port-id_ar4 -pg 1 -lvl 2 -x 220 -y 100 -defaultsOSRD
+preplace port port-id_ar10 -pg 1 -lvl 2 -x 220 -y 80 -defaultsOSRD
+preplace port port-id_ar9 -pg 1 -lvl 2 -x 220 -y 60 -defaultsOSRD
+preplace port port-id_ar5 -pg 1 -lvl 2 -x 220 -y 40 -defaultsOSRD
+preplace port port-id_ar8 -pg 1 -lvl 2 -x 220 -y 10 -defaultsOSRD
+preplace port port-id_ar7 -pg 1 -lvl 2 -x 220 -y -40 -defaultsOSRD
+preplace port port-id_ar6 -pg 1 -lvl 2 -x 220 -y -20 -defaultsOSRD
+preplace port port-id_CLK_IN -pg 1 -lvl 0 -x -10 -y 80 -defaultsOSRD
+preplace inst top_0 -pg 1 -lvl 1 -x 100 -y 80 -defaultsOSRD
+preplace netloc btn0_1 1 0 1 10 90n
+preplace netloc top_0_ar2 1 1 1 N 180
+preplace netloc top_0_ar12 1 1 1 N 160
+preplace netloc top_0_ar11 1 1 1 N 140
+preplace netloc top_0_ar3 1 1 1 N 120
+preplace netloc top_0_ar4 1 1 1 N 100
+preplace netloc top_0_ar10 1 1 1 N 80
+preplace netloc top_0_ar9 1 1 1 N 60
+preplace netloc top_0_ar5 1 1 1 N 40
+preplace netloc top_0_ar8 1 1 1 190 10n
+preplace netloc top_0_ar7 1 1 1 190 -40n
+preplace netloc top_0_ar6 1 1 1 N -20
+preplace netloc CLK_IN_1 1 0 1 10 70n
+levelinfo -pg 1 -10 100 220
+pagesize -pg 1 -db -bbox -sgen -110 -80 300 320
 "
 }
 

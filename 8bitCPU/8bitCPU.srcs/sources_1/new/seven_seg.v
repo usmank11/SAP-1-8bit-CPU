@@ -3,7 +3,7 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 10/25/2022 10:39:42 PM
+// Create Date: 10/26/2022 07:04:40 PM
 // Design Name: 
 // Module Name: seven_seg
 // Project Name: 

@@ -3,7 +3,7 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 10/25/2022 10:42:15 PM
+// Create Date: 10/26/2022 07:06:59 PM
 // Design Name: 
 // Module Name: top
 // Project Name: 
@@ -24,24 +24,24 @@
 `include "bin_bcd.v"
 
 module top(
-    input CLK,
-    input PIN_13,
-    output reg PIN_9,
-	output reg PIN_10, output reg PIN_11,
-	output PIN_12, output reg PIN_14,
-	output reg PIN_15, output PIN_16,
-	output PIN_17, output reg PIN_18,
-	output reg PIN_19, output PIN_20
+    input CLK_IN,
+    input btn0,
+    output reg ar6,
+	output reg ar7, output reg ar8,
+	output ar5, output reg ar9,
+	output reg ar10, output ar4,
+	output ar3, output reg ar11,
+	output reg ar12, output ar2
     );
     
     wire[7:0] out;
     reg[23:0] clk;
-    always @(posedge CLK)
+    always @(posedge CLK_IN)
         clk <= clk + 1;
     
     cpu cpu0(
         .clk(clk[15]),
-        .reset(PIN_13),
+        .reset(btn0),
         .out(out)
     );
     
@@ -70,20 +70,20 @@ module top(
         case (cathode)
             4'b1110: begin
                 cathode = 4'b1011;
-                {PIN_11, PIN_9, PIN_15, PIN_18, PIN_19, PIN_10, PIN_14} = seg_hundreds;
+                {ar8, ar6, ar10, ar11, ar12, ar7, ar9} = seg_hundreds;
             end
             4'b1011: begin
                 cathode = 4'b1101;
-                {PIN_11, PIN_9, PIN_15, PIN_18, PIN_19, PIN_10, PIN_14} = seg_tens;
+                {ar8, ar6, ar10, ar11, ar12, ar7, ar9} = seg_tens;
             end
             4'b1101: begin
                 cathode = 4'b1110;
-                {PIN_11, PIN_9, PIN_15, PIN_18, PIN_19, PIN_10, PIN_14} = seg_ones;
+                {ar8, ar6, ar10, ar11, ar12, ar7, ar9} = seg_ones;
             end
             default: begin
                 cathode = 4'b1111;
             end
         endcase
 
-    assign {PIN_20, PIN_17, PIN_16, PIN_12} = cathode;
+    assign {ar2, ar3, ar4, ar5} = cathode;
 endmodule

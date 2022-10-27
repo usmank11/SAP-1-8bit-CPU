@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date         : Wed Oct 26 00:44:04 2022
+| Date         : Wed Oct 26 19:42:08 2022
 | Host         : DESKTOP-I5HHF0K running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
 | Design       : top
@@ -58,11 +58,11 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              32 |            9 |
+| No           | No                    | No                     |              32 |           11 |
 | No           | No                    | Yes                    |               5 |            3 |
 | No           | Yes                   | No                     |               0 |            0 |
-| Yes          | No                    | No                     |               7 |            4 |
-| Yes          | No                    | Yes                    |              40 |           13 |
+| Yes          | No                    | No                     |               7 |            3 |
+| Yes          | No                    | Yes                    |              40 |           15 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -70,21 +70,21 @@ Table of Contents
 4. Detailed Control Set Information
 -----------------------------------
 
-+----------------+-------------------------------+------------------+------------------+----------------+--------------+
-|  Clock Signal  |         Enable Signal         | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
-+----------------+-------------------------------+------------------+------------------+----------------+--------------+
-|  clk_reg[10]   |                               |                  |                1 |              2 |         2.00 |
-|  clk_BUFG      | cpu0/ctrl_mi                  | PIN_13_IBUF      |                1 |              4 |         4.00 |
-|  clk_BUFG      | cpu0/pc[3]_i_1_n_0            | PIN_13_IBUF      |                2 |              4 |         2.00 |
-|  clk_BUFG      |                               | PIN_13_IBUF      |                3 |              5 |         1.67 |
-|  clk_reg[10]   | PIN_20_OBUF                   |                  |                4 |              7 |         1.75 |
-|  clk_BUFG      | cpu0/ctrl_bi                  | PIN_13_IBUF      |                3 |              8 |         2.67 |
-|  clk_BUFG      | cpu0/ctrl_ai                  | PIN_13_IBUF      |                3 |              8 |         2.67 |
-|  clk_BUFG      | cpu0/ctrl_ii                  | PIN_13_IBUF      |                3 |              8 |         2.67 |
-|  clk_BUFG      | cpu0/mem_reg_0_15_0_0_i_2_n_0 |                  |                2 |              8 |         4.00 |
-|  clk_BUFG      | cpu0/ctrl_oi                  | PIN_13_IBUF      |                1 |              8 |         8.00 |
-| ~clk_BUFG      |                               |                  |                4 |             14 |         3.50 |
-|  CLK_IBUF_BUFG |                               |                  |                4 |             16 |         4.00 |
-+----------------+-------------------------------+------------------+------------------+----------------+--------------+
++-------------------+-------------------------------+------------------+------------------+----------------+--------------+
+|    Clock Signal   |         Enable Signal         | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
++-------------------+-------------------------------+------------------+------------------+----------------+--------------+
+|  clk_reg[10]      |                               |                  |                2 |              2 |         1.00 |
+|  clk_BUFG         | cpu0/ctrl_mi                  | btn0_IBUF        |                1 |              4 |         4.00 |
+|  clk_BUFG         | cpu0/pc[3]_i_1_n_0            | btn0_IBUF        |                1 |              4 |         4.00 |
+|  clk_BUFG         |                               | btn0_IBUF        |                3 |              5 |         1.67 |
+|  clk_reg[10]      | ar2_OBUF                      |                  |                3 |              7 |         2.33 |
+|  clk_BUFG         | cpu0/ctrl_ai                  | btn0_IBUF        |                3 |              8 |         2.67 |
+|  clk_BUFG         | cpu0/mem_reg_0_15_0_0_i_2_n_0 |                  |                2 |              8 |         4.00 |
+|  clk_BUFG         | cpu0/ctrl_bi                  | btn0_IBUF        |                3 |              8 |         2.67 |
+|  clk_BUFG         | cpu0/ctrl_oi                  | btn0_IBUF        |                3 |              8 |         2.67 |
+|  clk_BUFG         | cpu0/ctrl_ii                  | btn0_IBUF        |                4 |              8 |         2.00 |
+| ~clk_BUFG         |                               |                  |                5 |             14 |         2.80 |
+|  CLK_IN_IBUF_BUFG |                               |                  |                4 |             16 |         4.00 |
++-------------------+-------------------------------+------------------+------------------+----------------+--------------+
 
 
