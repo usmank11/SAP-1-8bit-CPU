@@ -6,4 +6,6 @@ Demo shows the cpu running a program that counts up to 255 and counts back down 
 
 https://user-images.githubusercontent.com/74438849/198173400-826c1631-5be0-4f88-9e11-656a050c9858.mov
 
+Repo includes full vivado project file inside "/8bitCPU" folder. I've also included the individual verilog files for use with other FPGA dev boards.
+
 
